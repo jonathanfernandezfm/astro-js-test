@@ -1,0 +1,37 @@
+---
+// Layout Component Imports
+import Header from '../layout/Header.tsx';
+import Container from '../layout/Container.tsx';
+
+// Component Imports
+import Text from '../components/Text.tsx';
+import Image from '../components/Image.tsx';
+import Button from '../components/Button.tsx';
+
+// Variables
+let title = '>jfm | Contact';
+
+// Styles
+const styles = {
+    body: 'px-8 xl:py-16 py-8',
+    main: 'mt-10 text-center',
+}
+---
+    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/style/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class={styles.body}>
+    <Header activeLabel={'Contact'}/>
+    <main class={styles.main}>
+    </main>
+</body>
+</html>
